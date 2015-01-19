@@ -1,0 +1,16 @@
+// Import global config:
+@import config
+
+// <title> of the HTML:
+@title Pages
+
+
+# Pages
+
+All pages of our platform.
+
+
+// Import other LSG files:
+// (`pages/*` should only import files not imported yet.)
+@import pages/profile
+@import pages/*

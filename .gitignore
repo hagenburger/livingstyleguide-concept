@@ -1,0 +1,14 @@
+*.gem
+*.rbc
+.bundle
+.config
+.yardoc
+InstalledFiles
+_yardoc
+coverage
+doc/
+pkg
+rdoc
+tmp
+.rvmrc
+.sass-cache/

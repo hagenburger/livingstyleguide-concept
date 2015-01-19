@@ -1,0 +1,22 @@
+# Button
+
+// Same as _button.lsg but using an external template:
+```
+@import _button.mustache {
+  "text": "A button";
+}
+```
+
+```
+@import _button.mustache {
+  "text": "A button"
+  "primary": true
+}
+```
+
+// Using YAML instead of JSON for data:
+```
+@import _button.mustache; yaml
+  text: A button
+  small: true
+```

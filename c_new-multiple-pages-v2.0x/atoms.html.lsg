@@ -1,0 +1,14 @@
+// Import global config:
+@import config
+
+// <title> of the HTML:
+@title Atoms
+
+
+# Atoms
+
+All atoms of our platform.
+
+
+// Import other LSG files:
+@import atoms/*

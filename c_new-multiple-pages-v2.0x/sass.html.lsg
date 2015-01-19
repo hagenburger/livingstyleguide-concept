@@ -1,0 +1,53 @@
+// Import global config:
+@import config
+
+// <title> of the HTML:
+@title Coding Sass
+
+// Markdown based documentation:
+# Coding style
+
+## Some rules for writing CSS
+
+* Avoid cascading where possible
+* Only use classes, no IDs or tag names
+
+
+## Components naming conventions
+
+For each module/component in _app/assets/stylesheets/components/_:
+
+* `.module`: lowercase, with dashes if needed
+* `.module--sub-element`: divided with two dashes (two dashes appear only
+  once per class to separate the module and everything else)
+* `.-modifier`: only to be used in combination with a `.module` or
+  `.module--sub-element`
+* Each module gets an own Sass file `components/_module.sass` and style guide documentation `components/_module.md` with examples.
+
+Please have a look at [this blog post about naming conventions](http://www.hagenburger.net/BLOG/Modular-CSS-Class-Names.html).
+
+
+## Configuration
+
+All Sass files within _app/assets/stylesheets/config/_ must not generate CSS
+output. Allowed:
+
+* `@imports` (only import other files that follow the same rules)
+* `$variable` definitions
+* `@mixin` definitions
+
+
+## Global styles
+
+In _app/assets/stylesheets/base/_ only few global styles should be (re)set:
+
+* `tagname`: reset all or specific HTML tags
+* `%placeholders`: should be defined here
+* `@font-face`: importing of webfonts
+* `.-global-modifier-`: can be combined with any element (they usually
+  should represent a specific state of the website)
+
+
+# Mixins
+
+@import base/_mixins.sass

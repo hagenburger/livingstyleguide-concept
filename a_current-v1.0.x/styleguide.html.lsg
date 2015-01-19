@@ -1,0 +1,37 @@
+# Currently YAML syntax which is strict about whitespace and maybe hard to
+# understand for CSS/SCSS developers, especially the multiline statements.
+
+# Load your project’s main Sass file and automatically lookup *.lsg files for
+# each Sass import statement:
+source: "styles.scss"
+
+# Insert HTML for the header of the style guide files:
+header: |
+  <header>
+    <h1>My Living Style Guide</h1>
+    <nav>
+      <a href="style.html">Style</a>
+      <a href="sass.html">sass</a>
+      <a href="atoms.html">Atoms</a>
+      <a href="templates.html">templates</a>
+    </nav>
+  </header>
+
+# Link JavaScript files:
+javascript-before: "/javascripts/modernizr.js"
+javascript-after: "http://code.jquery.com/jquery-2.1.0.min.js"
+javascript-after: "/javascripts/underscore-1.6.0.min.js"
+
+# Customize the defaut design (incl. variables defined in your project’s styles):
+styles:
+  color: "$my-color"
+  code-color: "adjust-hue($base-color, 180deg)"
+  base-font: "Helvetica Neue, Helvetica, Arial, sans-serif"
+
+styleguide-scss: |
+  .lsg-popup-wrapper {
+    min-height: 100px;
+  }
+  .some-custom-styleguide-css {
+    // ..
+  }

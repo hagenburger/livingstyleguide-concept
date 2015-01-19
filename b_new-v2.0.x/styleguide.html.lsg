@@ -1,0 +1,32 @@
+// Load your project’s main Sass file and automatically lookup *.lsg files for
+// each Sass import statement:
+@source styles.scss
+
+// Insert HTML for the header of the style guide files:
+@header {
+  <header>
+    <h1>My Living Style Guide</h1>
+    <nav>
+      <a href="style.html">Style</a>
+      <a href="sass.html">sass</a>
+      <a href="atoms.html">Atoms</a>
+      <a href="templates.html">templates</a>
+    </nav>
+  </header>
+}
+
+// Link JavaScript files:
+@javascript-before /javascripts/modernizr.js
+@javascript-after http://code.jquery.com/jquery-2.1.0.min.js
+@javascript-after /javascripts/underscore-1.6.0.min.js
+
+// Customize the defaut design (incl. variables defined in your project’s styles):
+@style color: $my-color
+@style code-color: adjust-hue($base-color, 180deg)
+@style base-font: Helvetica Neue, Helvetica, Arial, sans-serif
+
+@css {
+  .some-custom-styleguide-css {
+    // ..
+  }
+}

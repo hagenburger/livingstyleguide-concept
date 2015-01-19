@@ -1,0 +1,16 @@
+@import config
+
+@title Our Style Guide—Home
+
+<div>
+  <h2>Welcome to our style guide</h2>
+
+  <p>Our style guide has some sections:</p>
+
+  <ul>
+    <li><a href="style.html">Style</a></li>
+    <li><a href="sass.html">sass</a></li>
+    <li><a href="atoms.html">Atoms</a></li>
+    <li><a href="templates.html">templates</a></li>
+  </ul>
+</div>

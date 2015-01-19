@@ -1,0 +1,9 @@
+// Import global config:
+@import config
+
+// <title> of the HTML:
+@title Our Style Guide—Home
+
+// Import other LSG files:
+@import base/colors
+@import base/typography
