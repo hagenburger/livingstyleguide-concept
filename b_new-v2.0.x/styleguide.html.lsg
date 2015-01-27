@@ -25,7 +25,7 @@
 @style code-color: adjust-hue($base-color, 180deg)
 @style base-font: Helvetica Neue, Helvetica, Arial, sans-serif
 
-@css {
+@scss {
   .some-custom-styleguide-css {
     // ..
   }

@@ -5,11 +5,11 @@
 @require custom-stuf
 
 // Only load files needed instead of all Sass code (this speeds up rendering)
-@css base/_colors.scss
-@css base/_typography.scss
+@import base/_colors.scss
+@import base/_typography.scss
 
 // Include the rendered CSS (*.css results in @import statement):
-@css styles.css
+@import styles.css
 
 // Insert HTML for the header of the style guide files:
 @header {
@@ -40,7 +40,8 @@
 @default html: html
 
 
-@css
-  // This would be interpreted as Sass as defined above (line 39):
-  .some-custom-styleguide-css
+@scss {
+  .some-custom-styleguide-css {
     // ..
+  }
+}
