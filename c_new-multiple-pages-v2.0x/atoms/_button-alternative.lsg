@@ -9,7 +9,7 @@
 
 ```
 @import _button.mustache {
-  "text": "A button"
+  "text": "A button",
   "primary": true
 }
 ```
