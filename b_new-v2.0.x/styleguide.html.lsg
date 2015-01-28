@@ -1,6 +1,7 @@
 // Load your project’s main Sass file and automatically lookup *.lsg files for
 // each Sass import statement:
 @source styles.scss
+// WARNING: @source is not implemented in the alpha yet!
 
 // Insert HTML for the header of the style guide files:
 @header {
@@ -14,16 +15,19 @@
     </nav>
   </header>
 }
+// WARNING: @header is not implemented in the alpha yet!
 
 // Link JavaScript files:
 @javascript-before /javascripts/modernizr.js
 @javascript-after http://code.jquery.com/jquery-2.1.0.min.js
 @javascript-after /javascripts/underscore-1.6.0.min.js
+// WARNING: @javascripte-* is not implemented in the alpha yet!
 
 // Customize the defaut design (incl. variables defined in your project’s styles):
 @style color: $my-color
 @style code-color: adjust-hue($base-color, 180deg)
 @style base-font: Helvetica Neue, Helvetica, Arial, sans-serif
+// WARNING: @style is not implemented in the alpha yet!
 
 @scss {
   .some-custom-styleguide-css {

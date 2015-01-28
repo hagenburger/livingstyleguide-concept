@@ -1,6 +1,7 @@
 @import config
 
 @title Our Style Guide—Home
+// WARNING: @title is not implemented in the alpha yet!
 
 <div>
   <h2>Welcome to our style guide</h2>

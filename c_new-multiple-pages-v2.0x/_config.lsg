@@ -1,5 +1,6 @@
 // Require a Gem with extensions (eg other filters):
 @require some-gem
+// WARNING: @require is not implemented in the alpha yet!
 
 // Require any Ruby file you need:
 @require custom-stuf
@@ -23,22 +24,25 @@
     </nav>
   </header>
 }
+// WARNING: @header is not implemented in the alpha yet!
 
 // Link JavaScript files:
 @javascript-before /javascripts/modernizr.js
 @javascript-after http://code.jquery.com/jquery-2.1.0.min.js
 @javascript-after /javascripts/underscore-1.6.0.min.js
+// WARNING: @javascript-* is not implemented in the alpha yet!
 
 // Customize the defaut design (incl. variables defined in your project’s styles):
 @style color: $my-color
 @style code-color: adjust-hue($base-color, 180deg)
 @style base-font: Helvetica Neue, Helvetica, Arial, sans-serif
+// WARNING: @style is not implemented in the alpha yet!
 
 // Set some defaults:
 @default data: yaml
 @default css: sass
 @default html: html
-
+// WARNING: @default is not implemented in the alpha yet!
 
 @scss {
   .some-custom-styleguide-css {

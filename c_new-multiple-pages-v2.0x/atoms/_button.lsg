@@ -12,3 +12,4 @@
 ```
 <button class="button ***-small***">A button</button>
 ```
+// WARNING: ***...*** is not implemented in the alpha yet!

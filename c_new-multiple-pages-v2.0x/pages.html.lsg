@@ -3,6 +3,7 @@
 
 // <title> of the HTML:
 @title Pages
+// WARNING: @title is not implemented in the alpha yet!
 
 
 # Pages
