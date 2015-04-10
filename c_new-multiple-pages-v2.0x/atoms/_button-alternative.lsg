@@ -16,7 +16,7 @@
 
 // Using YAML instead of JSON for data:
 ```
-@import _button.mustache; yaml
+@import _button.mustache, type: yaml
   text: A button
   small: true
 ```
